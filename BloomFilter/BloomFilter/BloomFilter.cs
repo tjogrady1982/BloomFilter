@@ -9,7 +9,7 @@ namespace BloomFilter
 {
     public class BloomFilter
     {
-        const int arraySize = 1000000;
+        const int arraySize = 10000000;
         const int numberOfHashes = 5; //allows multiple hash values but these are not truely independent
         BitArray bloom = new BitArray(arraySize);
 
