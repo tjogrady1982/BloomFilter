@@ -19,9 +19,10 @@ namespace BloomFilter
 
             foreach (var word in wordList.WordList)
             {
-
-                //bloomFilter.SetValueInBloomFilter(word);
-
+                if (!string.IsNullOrEmpty(word))
+                {
+                    bloomFilter.AddData(word);
+                }
             }
         }
     }
