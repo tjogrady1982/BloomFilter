@@ -24,8 +24,11 @@ namespace BloomFilter
                     bloomFilter.AddData(word);
                 }
             }
-            bloomFilter.LookUp("ball"); //should return true
-            bloomFilter.LookUp("a6a7shga"); //should return false
+            //bloomFilter.LookUp("ball"); //should return true
+            //bloomFilter.LookUp("a6a7shga"); //should return false
+            var randomList = new RandomFiveLetterGenerator();
+            var ra = randomList.randomFiveCharacterList(100);
+
         }
     }
 }

@@ -46,6 +46,7 @@
     <Compile Include="FileDownloader.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandomFiveLetterGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
