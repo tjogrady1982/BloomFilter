@@ -9,7 +9,7 @@ namespace BloomFilter
 {
     public class BloomFilter
     {
-        const int arraySize = 10000000;
+        const int arraySize = 10000000; //lowering array size increases incidence of false positives
         const int numberOfHashes = 5; //allows multiple hash values but these are not truely independent
         BitArray bloom = new BitArray(arraySize);
 
