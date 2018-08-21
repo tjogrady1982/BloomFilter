@@ -24,6 +24,8 @@ namespace BloomFilter
                     bloomFilter.AddData(word);
                 }
             }
+            bloomFilter.LookUp("ball"); //should return true
+            bloomFilter.LookUp("a6a7shga"); //should return false
         }
     }
 }

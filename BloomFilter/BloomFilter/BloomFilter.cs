@@ -32,6 +32,14 @@ namespace BloomFilter
                 bloom.Set(hashes[i] % arraySize, true);
             }
         }
-
+        public Boolean LookUp(string word)
+        {
+            int[] hashes = Hashes(word, numberOfHashes);
+            for (int i = 0; i < numberOfHashes; i++)
+            {
+                if (bloom[hashes[i] % arraySize] == false) return false;
+            }
+            return true;
+        }
     }
 }
