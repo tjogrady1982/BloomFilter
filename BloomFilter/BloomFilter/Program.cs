@@ -10,6 +10,19 @@ namespace BloomFilter
     {
         static void Main(string[] args)
         {
+            new Program().RunBloomFilter();
+        }
+        private void RunBloomFilter()
+        {
+            var wordList = new FileDownloader();
+            var bloomFilter = new BloomFilter();
+
+            foreach (var word in wordList.WordList)
+            {
+
+                //bloomFilter.SetValueInBloomFilter(word);
+
+            }
         }
     }
 }

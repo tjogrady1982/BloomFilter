@@ -10,9 +10,12 @@ namespace BloomFilter
 {
     public class FileDownloader
     {
-        public List<string> WordList { get; set; }
+        public List<string> WordList = new List<string>();
 
-
+        public FileDownloader()
+        {
+            Download();
+        }
         public void Download()
         {
             var wc = new WebClient();
@@ -21,6 +24,7 @@ namespace BloomFilter
             var sr = new StreamReader(data);
 
             string currentLine;
+
 
             do
             {
@@ -33,6 +37,6 @@ namespace BloomFilter
 
             data.Close();
         }
-        
+
     }
 }
